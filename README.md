@@ -1,4 +1,4 @@
-# *WIP* Default create-svelte readme below
+# _WIP_ Default create-svelte readme below
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
