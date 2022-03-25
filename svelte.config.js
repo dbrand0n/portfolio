@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-auto';
+import postcss from 'rollup-plugin-postcss';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -9,7 +10,11 @@ const config = {
 
 	kit: {
 		adapter: adapter()
-	}
+	},
+
+	plugins: [
+		postcss()
+	]
 };
 
 export default config;
