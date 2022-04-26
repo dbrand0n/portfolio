@@ -1,11 +1,19 @@
 <script>
-    import 'bulma/css/bulma.css'
-    import Button from 'svelma/src/components/Button.svelte'
+    import {images} from '../store/store';
+    console.log($images);
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<svelte:head>
+    <title>dbrandon</title>
+</svelte:head>
 
-<br/>
+<h1>For now, a list of images of Europa.</h1>
 
-<Button type="is-primary">Bulma button</Button>
+{#each $images as image}
+    <img src="{image.links[0].href}" alt="{image.data[0].description_508}"/>
+    <br/>
+{/each}
+
+<style>
+
+</style>
