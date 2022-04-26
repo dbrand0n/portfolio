@@ -7,10 +7,12 @@
     <title>dbrandon</title>
 </svelte:head>
 
-<h1>For now, a list of images of Europa.</h1>
+<h1 class='text-3xl font-bold underline'>For now, a list of images of Europa.</h1>
 
 {#each $images as image}
-    <img src="{image.links[0].href}" alt="{image.data[0].description_508}"/>
+    <div>
+        <img src="{image.links[0].href}" alt="{image.data[0].description_508}" />
+    </div>
     <br/>
 {/each}
 
