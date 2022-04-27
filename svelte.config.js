@@ -12,9 +12,7 @@ const config = {
 		adapter: adapter()
 	},
 
-	plugins: [
-		postcss()
-	]
+	plugins: [postcss()]
 };
 
 export default config;
