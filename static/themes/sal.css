@@ -1,8 +1,7 @@
 [data-theme='sal'] {
-    --background-image: url(static/assets/sal.jpg)
     --text-scaling: 1.067;
     --base-font-color: var(--color-surface-950);
-    --base-font-color-dark: var(--color-surface-50);
+    --base-font-color-dark: var(--color-primary-100);
     --base-font-family: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
     --base-font-size: inherit;
     --base-line-height: inherit;
@@ -33,7 +32,7 @@
     --default-border-width: 1px;
     --default-divide-width: 1px;
     --default-ring-width: 1px;
-    --body-background-color: var(--color-surface-50);
+    --body-background-color: var(--color-surface-500);
     --body-background-color-dark: var(--color-primary-500);
     --color-primary-50: oklch(97.79% 0.11 107.76deg);
     --color-primary-100: oklch(91.55% 0.11 99.42deg);

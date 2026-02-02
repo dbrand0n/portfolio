@@ -5,7 +5,7 @@
 	let { children } = $props();
 </script>
 
-<div class="app">
+<div class="app bg-sal">
 	<Header />
 	<main>{@render children()}</main>
 
@@ -19,6 +19,14 @@
 </div>
 
 <style>
+	.bg-sal {
+		background-image: url('/assets/sal.jpg');
+		background-size: auto 33%;
+		background-position: center;
+		background-repeat: repeat;
+		text-shadow: 3px 3px 5px black;
+	}
+
 	.app {
 		display: flex;
 		flex-direction: column;
