@@ -1,26 +1,28 @@
-# _WIP_ Default create-svelte readme below
+# sv
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
 ## Creating a project
 
 If you're seeing this, you've probably already done this step. Congrats!
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+```sh
+# create a new project
+npx sv create my-app
 ```
 
-> Note: the `@next` is temporary
+To recreate this project with the same configuration:
+
+```sh
+# recreate this project
+npx sv create --template demo --types ts --add prettier eslint tailwindcss="plugins:typography,forms" sveltekit-adapter="adapter:netlify" drizzle="database:postgresql+postgresql:postgres.js+docker:no" --install npm portfolio
+```
 
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
+```sh
 npm run dev
 
 # or start the server and open the app in a new browser tab
@@ -31,10 +33,10 @@ npm run dev -- --open
 
 To create a production version of your app:
 
-```bash
+```sh
 npm run build
 ```
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
